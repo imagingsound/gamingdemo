@@ -1,0 +1,17 @@
+<div class="col-md-4 chat">
+  <div class="messages">
+    <div ng-repeat="message in messages">
+      <div class="message">
+        <span style="color:{{getColor(message[0])}}">{{message[0]}}</span>:{{message[1]}}
+      </div>
+    </div>
+  </div>
+  <div class="send-panel">
+    <div class="col-md-10">
+      <textarea ng-model="message" ng-keydown="evaluateEvent($event)"></textarea>
+    </div>
+    <div class="col-md-2">
+      <button ng-click="sendMessage()">Send</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="titlerow row">
+    <h1 class="col-md-10 col-md-offset-1">{{ videoRowName.title }} <span>{{ videoRowName.description }}</span></h1>
+  </div>
+  <div class="videorow row">
+    <div class="col-md-1"></div>
+    <div class="col-md-2 videocontainer" ng-repeat="video in videoRowName.videos">
+      <div class="thumb" style="background-image:url('{{ video.preview_image_url }}')">
+        <a href="#/channel/{{ video.embed_code }}">
+        <div id="overlay"></div>
+        </a>
+      </div>
+      <div class="title">{{ video.name | limitTo: 44 }}</div>
+      <div class="viewers">{{ video.viewers }} viewers</div>
+    <div class="col-md-1"></div>
+    </div>
+  </div>
+</div>

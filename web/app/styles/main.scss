@@ -1,0 +1,439 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Header */
+div.site-header {
+  background-color: #21242e;
+  height: 60px;
+  border: none;
+  padding-top: 5px;
+  z-index: 99999;
+  div > .navbar-brand {
+    margin-top: -5px;
+  }
+
+  ul.nav > li > a {
+    color: #fff;
+    padding-top: 9px;
+  }
+
+  ul.nav > li > a:hover {
+    color: #fff;
+  }
+}
+
+.icn-donate {
+  position: absolute;
+  background-image: url("../images/ic_donate.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 28px;
+  height: 28px;
+  left: 15px;
+  top: 9px;
+}
+
+.icn-video {
+  background-image: url("../images/ic_videos.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+}
+
+.icn-games {
+  background-image: url("../images/ic_games.png");
+  background-repeat: no-repeat;
+  background-position: 0 4px;
+  width: 36px;
+  height: 28px;
+  display: inline-block;
+}
+
+.icn-channel {
+  background-image: url("../images/ic_channel.png");
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+  width: 40px;
+  height: 30px;
+  display: inline-block;
+}
+
+.icn-search {
+  background-image: url("../images/ic_search.png");
+  background-repeat: no-repeat;
+  background-position: 0 3px;
+  width: 24px;
+  height: 25px;
+  display: inline-block;
+}
+
+.icn-profile {
+  background-image: url("../images/ic_profile.png");
+  background-repeat: no-repeat;
+  background-position: 0 3px;
+  width: 44px;
+  height: 54px;
+  display: inline-block;
+  float: right;
+  margin: -10px -30px 0 10px;
+
+}
+
+.icn-label {
+  display: inline;
+  position: relative;
+  float: right;
+  margin: 5px;
+ }
+
+/* Main content */
+.main-content{margin-top:60px;}
+.featured-wrapper {
+  width: 100%;
+  background-color: #cbcbcb;
+  div.video-wrapper{
+    float: left;
+    width: 750px;
+    height: 410px;
+  }
+  div.content-desc {
+    float: left;
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+
+  }
+}
+
+.featured {
+  background-color: #fff;
+  height: 410px;
+  a > img {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+  .desc {
+    margin-top: 4em;
+  }
+  .watch {
+    text-align: right;
+    font-weight: bold;
+    font-size: 15pt;
+    margin: 2em;
+  }
+}
+
+.owl-theme .owl-pagination{display:none};
+.owl-theme .owl-controls .owl-buttons div {
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -khtml-border-radius: 0;
+  width: 100px;
+  background: none;
+  position: absolute;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+  background-image: url("../images/ic_arrow_prev.png");
+  left: -8px;
+  top: 5px;
+  width: 44px;
+  height: 146px;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-next{
+  background-image: url("../images/ic_arrow_next.png");
+  right: -8px;
+  top: 5px;
+  width: 44px;
+  height: 146px;
+}
+
+.featured-carousel {
+  margin-top: 10px;
+  div.owl-item {margin-right: -40px;}
+  div.item {
+    padding: 10px;
+  }
+  div > img {
+    width: 185px;
+    height: 147px;
+    border: 1px solid #ccc;
+  }
+}
+
+/* Footer */
+div.footer {
+  padding: 20px 0 10px 20px;
+  border-top: 1px solid #989898;
+}
+
+/*Chat */
+.chat {
+  position: relative;
+  padding:0px;
+  border:solid 1px black;
+  background-color: white;
+  width:100%;
+  height:100%;
+  .messages {
+    margin:0;
+    height: 458px;
+    overflow: scroll;
+    .message {
+      margin:0 5px;
+      font-weight: bold;
+    }
+  }
+  .send-panel {
+    height: 100px;
+    margin:0;
+    padding-top: 10px;
+    background-color:#525562;
+    textarea {
+      width: 100%;
+      height: 80px;
+      resize: none;
+    }
+    button {
+      width:40px;
+      height:80px;
+      background-color:transparent;
+      border:none;
+      color:white;
+    }
+  }
+}
+
+/*Login */
+.login {
+  height:170px;
+  .title{
+    height:30px;
+    background-color:gray;
+    text-align:center;
+    color:white;
+    padding-top:5px;
+  }
+  input {
+    margin: 10px;
+    width: 90%;
+  }
+  button {
+    margin: 0 auto;
+    display:block;
+  }
+}
+/*Channel */
+.channel-wrapper{background-color: #cbcbcb;}
+.channel {
+  .video {
+    overflow:hidden;
+    height:800px;
+    position:relative;
+    .main-video {
+      padding:0;
+      position:absolute;
+      height:600px;
+      width:780px;
+      .ooyala-videoplayer {
+        height:600px;
+      }
+    }
+    .activities {
+      position:absolute;
+      padding:0px;
+      left:780px;
+      height:600px;
+      width:390px;
+      ol{
+        li {
+          list-style:none;
+          background-color:#525562;
+        }
+      }
+      .chat-panel {
+        height:93%;
+      }
+    }
+    .description {
+      position:absolute;
+      top:600px;
+      width: 778px;
+      height: 120px;
+      padding-top: 45px;
+      font-size: 14pt;
+      div.avatar img {
+        border-radius: 100px;
+        -moz-border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -khtml-border-radius: 100px;
+        width: 100px;
+      }
+      div.title, div.viewers{margin-bottom: 10px;}
+      div.right {text-align: right; margin-right: 20px;}
+      button {
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        -khtml-border-radius: 0;
+        border-radius: 0;
+        height: 50px;
+      }
+      button.follow {
+        background-color: #4a9edb;
+        color: #fff;
+        width: 150px;
+      }
+      button.add-playlist {
+        background-color: #000;
+        color: #fff;
+        width: 150px;
+        i {
+          margin-right: 5px;
+        }
+      }
+      button.donate {
+        position: relative;
+        background-color: #f7941d;
+        color: #fff;
+        width: 130px;
+        padding-left: 38px;
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .ooyala-video2 {
+      position:absolute;
+      top:600px;
+      left:780px;
+      width:390px;
+      height:200px;
+      .video-overlay {
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+        z-index:100000000;
+        cursor:pointer;
+        .change-video {
+          height:100%;
+          background:url('../images/ic_change.png') no-repeat center center;
+        }
+      }
+    }
+  }
+}
+.animation-full-video {
+  -webkit-animation: full 1s;
+  -moz-transition: full 1s;
+  -o-transition: full 1s;
+  transition: full 1s;
+}
+.animation-min-video{
+  -webkit-animation: min 1s;
+  -moz-transition: min 1s;
+  -o-transition: min 1s;
+  transition: min 1s;
+}
+@keyframes min {
+  from {
+    top:0px;
+    left:0px;
+    width:790px;
+    height:600px;
+  }
+  to {
+    top:600px;
+    left:780px;
+    width:390px;
+    height:200px;
+  }
+}
+@keyframes full {
+  from{
+    top:600px;
+    left:780px;
+    width:390px;
+    height:200px;
+  }
+  to{
+    top:0px;
+    left:0px;
+    width:790px;
+    height:600px;
+  }
+}
+@-webkit-keyframes min {
+  from {
+    top:0px;
+    left:0px;
+    width:790px;
+    height:600px;
+  }
+  to {
+    top:600px;
+    left:780px;
+    width:390px;
+    height:200px;
+  }
+}
+@-webkit-keyframes full {
+  from{
+    top:600px;
+    left:780px;
+    width:390px;
+    height:200px;
+  }
+  to{
+    top:0px;
+    left:0px;
+    width:790px;
+    height:600px;
+  }
+}
+
+/*Video Rows*/
+.videorow {
+  height: 200px;
+  .videocontainer {
+    height: 110px;
+    .thumb {
+      height: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      #overlay{
+        height: 100%;
+        background: url(../images/ic_playsmall_copy_4.png) no-repeat center center;
+      }
+    }
+
+    .title {
+      font-weight: bold;
+    }
+  }
+}
+.titlerow {
+  h1 {
+    font-size: 14pt;
+    span {
+      font-size: 13pt;
+      font-weight: normal;
+    }
+  }
+}

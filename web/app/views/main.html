@@ -1,0 +1,27 @@
+<div class="featured-wrapper">
+  <div class="container featured">
+    <div class="row">
+      <div class="video-wrapper">
+        <div id="video-player"></div>
+      </div>
+      <div class="content-desc">
+        <div class="desc">
+          <h3>{{currentFeatured.name}}</h3>
+          <p>{{currentFeatured.description}}</p>
+        </div>
+        <div class="watch">
+          <a href="#/channel/{{currentFeatured.embed_code}}"><span>Watch and Chat!</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <items-carousel class="featured-carousel">
+      </items-carousel>
+    </div>
+  </div>
+</div>
+<video-row video-row-name="featuredRow"></video-row>
+<video-row video-row-name="topliveRow"></video-row>
